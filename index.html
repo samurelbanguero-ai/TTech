@@ -4,54 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-    .cv-container {
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      padding: 30px;
-      box-shadow: 0 0 10px rgba(0, 4, 255, 0.1);
-    }
-    h1, h2 {
-      border-bottom: 2px solid #0077cc;
-      padding-bottom: 5px;
-      color: #0105f7;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-    .contacto {
-      margin-bottom: 20px;
-    }
-    .foto {
-      flex: 0 0 200px;
-      margin-right: 20px;
-    }
-  </style>
+   <link rel="stylesheet" href="estilos.css">
+
 </head>
 <body>
+
   <div class="cv-container">
     <h1>Samuel Banguero Balanta</h1>
+     <img src="./Imagenes/samuel.jpg" alt="Samuel Banguero Balanta" width="20%" height="0%">
     <div class="cv-container">
-  <div class="foto">
-    <img src="samuel.jpg" alt="Samuel Banguero Balanta" width="50%" height="50%">
-      </div>
+
 
     <div class="section contacto">
       <p><strong>Ubicación:</strong> Jamundí, Valle del Cauca</p>
       <p><strong>Teléfono:</strong> 3135423614</p>
       <p><strong>Email:</strong> samurelbanguero@gmail.com</p>
     </div>
-    <section id="sobre mí">
+
+    <div class="section">
+      <ul>
+    <li> <a href="#Sobre mi">Quien soy</a></li>
+    <li> <a href="#Educacion"> Estudios </a></li>
+    <li> <a href="#proyecto"> Proyecto </a></li>
+    <li> <a href="#Habilidades"> Habilidades </a></li>
+    <li> <a href="#refereencias personales"> Referencias</a> </li>
+     <li> <a href="#Contacto"> Deja tu informacion</a></li>
+  
+  </ul>
+  </div>
+
+    <section id="Sobre mi">
 
     <div class="section">
       <h2>Sobre Mí</h2>
@@ -65,23 +47,34 @@
         También cuento con habilidades sólidas para el trabajo en equipo, liderazgo, atención al cliente y comunicación asertiva, lo que me permite desempeñarme con eficiencia tanto en el área tecnológica como en entornos comerciales o administrativos. Estoy en búsqueda de una oportunidad laboral donde pueda seguir creciendo personal y profesionalmente.
       </p>
     </div>
+    </section>
 
-    <div class="section">
+    <section id="Educacion">
       <h2>Educación</h2>
+
+    <div class="contenedor">
+      
       <ol>
-        <li><strong>Institución Educativa Nueva Visión Honduras:</strong> Bachiller académico</li>
-        <li><strong>SENA:</strong> Técnico en sistemas</li>
-        <li><strong>SENA:</strong> Emprendedor en producción de piezas audibles para industrias culturales</li>
-        <li><strong>Universidad de La Salle:</strong> Capacitación en estrategias de investigación</li>
-        <li><strong>Intro:</strong> Informática básica</li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE9n43fQlJsr5TAm38Q3k0uGhtWIlQ5PDPHQ&s" width="5%"> 
+          <strong>Institución Educativa Nueva Visión Honduras:</strong> Bachiller académico</li>
+        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/1200px-Sena_Colombia_logo.svg.png" width="10%"><strong>SENA:</strong> Técnico en sistemas</li>
+        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/1200px-Sena_Colombia_logo.svg.png" width="10%"><strong>SENA:</strong> Emprendedor en producción de piezas audibles para industrias culturales</li>
+        <li><img src="https://reqlut2.s3.sa-east-1.amazonaws.com/images/lasalle/logo.png?v=74.5" width="10%"><strong>Universidad de La Salle:</strong> Capacitación en estrategias de investigación</li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeWTCwUYfALSnTQneLYctRlRg1vM8OGEEH3Q&s" width="10%"><strong>Intro:</strong> Informática básica</li>
+        <li><img src="data:image/jpeg;base64,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" width="10%"><strong>Institucion Universitaria Antonio jose Camacho</strong> Ingenieria de Sistemas (actual sexto semestre)</li>
       </ol>
     </div>
-
-    <div class="section">
+    </section>
+  
+    <section id="proyecto">
+      <div class="section">
       <h2>Proyecto Destacado</h2>
       <p><strong>Emowave – Aplicación para salud mental</strong></p>
     </div>
 
+    </section>
+    
+    <section id="Habilidades">
     <div class="section">
       <h2>Habilidades</h2>
       <ul>
@@ -96,9 +89,12 @@
         <li>Atención al cliente y asesoría comercial</li>
       </ul>
     </div>
+  </section>
   </div>
-    <table border="1">
-    <h2>Referencias Personales</h2>
+  <section id="referencias personales">
+
+     <h2>Referencias Personales</h2>
+   <table border="1">
     <thead>
       <tr>
         <th>Nombre</th>
@@ -109,16 +105,16 @@
     </thead>
     <tbody>
       <tr>
-        <td>Ana María Gómez</td>
+        <td>Anyi Marroquin</td>
         <td>+57 300 123 4567</td>
-        <td>Contadora</td>
+        <td>Trabajadora Social</td>
         <td>Amiga</td>
       </tr>
       <tr>
-        <td>Carlos Rodríguez</td>
+        <td>Ruben Cardenas</td>
         <td>+57 311 987 6543</td>
-        <td>Ingeniero Civil</td>
-        <td>Excompañero de trabajo</td>
+        <td>Estudiante de ing de sistemas</td>
+        <td>Amigo</td>
       </tr>
       <tr>
         <td>Lucía Martínez</td>
@@ -128,6 +124,42 @@
       </tr>
     </tbody>
   </table>
+  </section>
+  <section id="Contacto">
+
+    <h2>Contactame</h2>
+    <form >
+  <div>
+     <div class="mb-3">
+        <label for="fname" class="form-label">Nombres</label>
+        <input type="text" id="fname" class="form-control" placeholder="DIGITE SU NOMBRE">
+      </div>
+       <div class="mb-3">
+        <label for="fname" class="form-label">Apellidos</label>
+        <input type="text" id="fname" class="form-control" placeholder="DIGITE SU APELLIDO">
+      </div>
+           <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" id="email" name="email" class="form-control" placeholder="ejemplo@correo.com">
+      </div>
+      
+          <div class="mb-3">
+        <label for="age" class="form-label">Numero telefonico</label>
+        <input type="number" id="Teléfono"  class="form-control" placeholder="+57">
+      </div>
+        <div class="mb-3 d-flex gap-2">
+        <input type="submit" class="btn btn-primary" value="ENVIAR">
+        <input type="reset" class="btn btn-secondary" value="REINICIAR">
+
+      </div>
+</div>
+
+</form>
+
+
+  </section>
+
+   
 
 </body>
 </html>
